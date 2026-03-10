@@ -1,0 +1,12 @@
+server:
+  port: 8761                 # Standard Eureka port
+spring:
+  application:
+    name: saga-eureka
+
+eureka:
+  client:
+    register-with-eureka: false   # Server doesn't register itself
+    fetch-registry: false         # Server doesn't fetch registry
+  server:
+    wait-time-in-ms-when-sync-empty: 0
